@@ -64,12 +64,12 @@ Consider the tests for each functionality below.
 In those tests, identify inputs and outputs.
 Enter one part that's real and another part that's faked/mocked.
 
-| Functionality            | Input        | Output                      | Faked/mocked part
-|--------------------------|--------------|-----------------------------|---
-Read input from server     | csv file     | internal data-structure     | Fake the server store
-Validate input             | csv data     | valid / invalid             | None - it's a pure function
-Notify report availability | _enter input | _enter output               | _enter fake or mock
-Report inaccessible server | _enter input | _enter output               | _enter fake or mock
-Find minimum and maximum   | _enter input | _enter output               | _enter fake or mock
-Detect trend               | _enter input | _enter output               | _enter fake or mock
-Write to PDF               | _enter input | _enter output               | _enter fake or mock
+| Functionality            | Input                 | Output                                   | Faked/mocked part
+|--------------------------|-----------------------|------------------------------------------|---
+Read input from server     | csv file              | internal data-structure                  | Fake the server store
+Validate input             | csv data              | valid / invalid                          | None - it's a pure function
+Notify report availability | no input              | Notification success flag                | mock the notification function (success flag)
+Report inaccessible server | no input              | communication error variable             | mock reading of the error variable 
+Find minimum and maximum   | csv data              | o/p data_structure (min max element)     | None - it's a pure function
+Detect trend               | csv data              | o/p data-structure                       | None - it's a pure function
+Write to PDF               | o/p data structure    | Flag to state success of Pdf file write  | mock the status flag  
