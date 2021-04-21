@@ -53,8 +53,8 @@ Add to these tests:
 
 1. Write minimum and maximum to the PDF from a csv containing positive and negative readings
 1. Write "Invalid input" to the PDF when the csv doesn't contain expected data
-1. _enter a test
-1. _enter a test
+1. Write "count fo breach" to the PDF from a csv containing readings
+1. Write "trends elements date & time" to the PDF when the reading was continuously increasing for 30 minutes
 
 (add more)
 
